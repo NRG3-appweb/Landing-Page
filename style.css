@@ -52,7 +52,7 @@ p {
   line-height: 1.5;
 }
 
-a, a:hover, a:focus, a:active, a:visited {
+a, a:hover, a:focus, a:active{
   color: #8EBEF7;
   text-decoration: underline;
 }
