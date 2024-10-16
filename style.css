@@ -11,21 +11,22 @@ Utilities
   display: flex;
   flex-direction: row;
   justify-content: center; 
-  align-items: center;     
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .mockup-display-title-container {
+  padding: 20px 0 20px 0;
   display: flex;
-  width: 100vw; /* Full viewport width */
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Prevent overflow issues */
 }
 
 .mockup-display-title-content{
   background-color: #B39DE7; 
   color: #fff; 
   justify-items: center;
+  border-radius: 10px;
 }
 
 .call-to-action-container{
