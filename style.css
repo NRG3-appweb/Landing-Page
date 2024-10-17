@@ -79,14 +79,6 @@ img {
   max-width: 100%;
 }
 
-.team-member-card p{
-  margin: 0;
-}
-
-.team-member-card-image{
-  margin: 20px 0 20px 0;
-}
-
 .about-the-product-container{
   display: flex;
   flex-direction: column;
@@ -108,6 +100,62 @@ img {
   border: 2px solid #B39DE7;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-the-team-container{
+  background-color: rgb(142, 190, 247, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 40px;
+}
+
+.about-the-team-title{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.about-the-team-row{
+  justify-content: space-between;
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+}
+
+.team-member-card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.team-member-card-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.team-member-card-image-container{
+  height: fit-content;
+}
+
+.team-member-card-image{
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  margin: 20px 0 20px 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.team-member-card p{
+  margin: 0;
 }
 
 /* ========================
@@ -236,7 +284,7 @@ Sections
 
 .splash {
   background: linear-gradient(rgba(248, 136, 136, 0.65), rgba(142, 190, 247, 0.65)),
-				url("Assets/unsplash_HvkDYluePqw.png") no-repeat fixed center;
+				url("assets/unsplash_HvkDYluePqw.png") no-repeat fixed center;
 	background-size: cover;
 	color: #fff;
 }
