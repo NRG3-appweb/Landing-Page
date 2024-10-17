@@ -416,8 +416,12 @@ Footer
 .footer {
   background-color: #B39DE7;
   color:  #fff;
+}
+
+.footer-row{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -438,6 +442,37 @@ Footer
     color: rgb(255, 255, 255);
     font-size: 1rem;
     text-decoration: none;
+}
+
+.social-network-logos-container {
+  display: flex;
+  align-items: center;
+  padding: 0 40px 0 40px;
+  height: fit-content;
+}
+
+.social-network-title{
+  height: fit-content;
+}
+
+.social-network-title p{
+  margin:0;
+  font-size: 20px;
+}
+
+.social-network-logos-container ul{
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.social-network-logo-img{
+  width: auto;
+  height: 30px;
 }
 
 /* ========================
