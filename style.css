@@ -28,6 +28,9 @@ Utilities
   justify-items: center;
   border-radius: 10px;
 }
+.mockup-image-container{
+  width: 45%;
+}
 
 .call-to-action-title{
   font-size: 30px;
@@ -79,7 +82,8 @@ img {
   max-width: 100%;
 }
 
-.about-the-product-container{
+.about-container{
+  background-color: #FBBFBF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,16 +92,16 @@ img {
   padding: 40px;
 }
 
-.about-the-product-title{
+.about-title{
   font-size: 40px;
   font-weight: bold;
 }
 
-.about-the-product-video {
+.about-video {
   width: 100%;
   max-width: 800px;
   height: auto;
-  border: 2px solid #B39DE7;
+  border: 2px solid #FBBFBF;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -580,5 +584,52 @@ Media Queries
   .contact form textarea {
     height: 12em;
   }
-  
+  /* Asegura que los contenedores de columnas se alineen correctamente */
+  .features .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Ajusta las columnas para pantallas medianas y grandes (3 columnas por fila) */
+  .features .col-md-4 {
+    flex: 0 0 32%; /* Hace que cada columna ocupe 32% del ancho total para 3 columnas */
+    max-width: 32%;
+    margin-bottom: 20px; /* Espacio entre las columnas */
+  }
+
+  /* Ajusta para pantallas pequeñas (1 columna por fila en móviles) */
+  @media (max-width: 768px) {
+    .features .col-md-4 {
+      flex: 0 0 100%; /* Cada columna ocupa el 100% del ancho */
+      max-width: 100%;
+    }
+  }
+
+  /* Estilos adicionales para los íconos */
+  .features h3 i {
+    margin-right: 8px;
+    color: #FF6F61; /* Personaliza el color del ícono */
+    font-size: 1.5em;
+  }
+
+  /* Centra el texto y las columnas si es necesario */
+  .features .col-md-4 h3 {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .features .col-md-4 p {
+    text-align: center;
+  }
+
+  /* Añade padding a las columnas para que no estén pegadas a los bordes */
+  .features .col-md-4 {
+    padding: 10px;
+  }
+  .container-fluid .features {
+    background-color: #8EBEF7;
+  }
+
+
 }
