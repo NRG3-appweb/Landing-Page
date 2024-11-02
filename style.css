@@ -11,34 +11,56 @@ Utilities
   display: flex;
   flex-direction: row;
   justify-content: center; 
-  align-items: center;     
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .mockup-display-title-container {
+  padding: 20px 0 20px 0;
   display: flex;
-  width: 100vw; /* Full viewport width */
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Prevent overflow issues */
 }
 
 .mockup-display-title-content{
   background-color: #B39DE7; 
   color: #fff; 
   justify-items: center;
+  border-radius: 10px;
+}
+.mockup-image-container{
+  width: 45%;
+}
+
+.call-to-action-title{
+  font-size: 30px;
+  color: #37123C;
+}
+
+.call-to-action-button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-to-action-segment{
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
 .call-to-action-container{
   display: flex;
+  justify-content: center;
   align-items: center;
-  width:auto;
+  width: auto;
 }
 .call-to-action-button {
   background-color: #37123C;
   color:white;
   border-style: none;
   border-radius: 10px;
-  font-size: 40px;
+  font-size: 30px;
   padding: 10px 20px 10px 20px;
 }
 
@@ -58,6 +80,106 @@ html {
 
 img {
   max-width: 100%;
+}
+
+.about-container{
+  background-color: #FBBFBF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 40px;
+}
+
+.about-title{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.about-video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border: 2px solid #FBBFBF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-the-team-container{
+  background-color: rgb(142, 190, 247, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 40px;
+}
+
+.about-the-team-title{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.about-the-team-row{
+  justify-content: space-between;
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+}
+
+.team-member-card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.team-member-card-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.team-member-card-image-container{
+  height: fit-content;
+}
+
+.team-member-card-image{
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  margin: 20px 0 20px 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.team-member-card p{
+  margin: 0;
+}
+
+.language-switcher{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.toolbar-options{
+  font-size: 20px;
+}
+
+.language-switcher-button{
+  font-family: 'Tajawal', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: white;
+  color: #37123C;
+  font-weight: bold;
 }
 
 /* ========================
@@ -186,7 +308,7 @@ Sections
 
 .splash {
   background: linear-gradient(rgba(248, 136, 136, 0.65), rgba(142, 190, 247, 0.65)),
-				url("Assets/unsplash_HvkDYluePqw.png") no-repeat fixed center;
+				url("assets/unsplash_HvkDYluePqw.png") no-repeat fixed center;
 	background-size: cover;
 	color: #fff;
 }
@@ -318,8 +440,12 @@ Footer
 .footer {
   background-color: #B39DE7;
   color:  #fff;
+}
+
+.footer-row{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -340,6 +466,37 @@ Footer
     color: rgb(255, 255, 255);
     font-size: 1rem;
     text-decoration: none;
+}
+
+.social-network-logos-container {
+  display: flex;
+  align-items: center;
+  padding: 0 40px 0 40px;
+  height: fit-content;
+}
+
+.social-network-title{
+  height: fit-content;
+}
+
+.social-network-title p{
+  margin:0;
+  font-size: 20px;
+}
+
+.social-network-logos-container ul{
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.social-network-logo-img{
+  width: auto;
+  height: 30px;
 }
 
 /* ========================
@@ -427,5 +584,52 @@ Media Queries
   .contact form textarea {
     height: 12em;
   }
-  
+  /* Asegura que los contenedores de columnas se alineen correctamente */
+  .features .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Ajusta las columnas para pantallas medianas y grandes (3 columnas por fila) */
+  .features .col-md-4 {
+    flex: 0 0 32%; /* Hace que cada columna ocupe 32% del ancho total para 3 columnas */
+    max-width: 32%;
+    margin-bottom: 20px; /* Espacio entre las columnas */
+  }
+
+  /* Ajusta para pantallas pequeñas (1 columna por fila en móviles) */
+  @media (max-width: 768px) {
+    .features .col-md-4 {
+      flex: 0 0 100%; /* Cada columna ocupa el 100% del ancho */
+      max-width: 100%;
+    }
+  }
+
+  /* Estilos adicionales para los íconos */
+  .features h3 i {
+    margin-right: 8px;
+    color: #FF6F61; /* Personaliza el color del ícono */
+    font-size: 1.5em;
+  }
+
+  /* Centra el texto y las columnas si es necesario */
+  .features .col-md-4 h3 {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .features .col-md-4 p {
+    text-align: center;
+  }
+
+  /* Añade padding a las columnas para que no estén pegadas a los bordes */
+  .features .col-md-4 {
+    padding: 10px;
+  }
+  .container-fluid .features {
+    background-color: #8EBEF7;
+  }
+
+
 }
