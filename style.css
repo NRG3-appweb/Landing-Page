@@ -6,6 +6,11 @@ Utilities
   box-sizing: border-box;
 }
 
+.team-section-container{
+  display: flex;
+  flex-direction: row;
+}
+
 .mockup-display {
   width: 100%;
   display: flex;
@@ -82,14 +87,22 @@ img {
   max-width: 100%;
 }
 
+.video-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 20px 200px;
+}
+
 .about-container{
-  background-color: #FBBFBF;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: auto;
-  padding: 40px;
+  padding: 0px 20px 100px 100px;
 }
 
 .about-title{
@@ -101,9 +114,7 @@ img {
   width: 100%;
   max-width: 800px;
   height: auto;
-  border: 2px solid #FBBFBF;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-the-team-container{
@@ -118,8 +129,14 @@ img {
 
 .about-the-team-title{
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
+}
+
+.team-member-cards-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-the-team-row{
@@ -127,6 +144,7 @@ img {
   display: flex;
   gap: 40px;
   flex-direction: row;
+  width: fit-content;
 }
 
 .team-member-card{
@@ -401,7 +419,7 @@ Sections
   display: inline-flex;
   height: auto;
   padding: 2px;
-  width: 30%;
+  width: 60%;
 }
 
 .contact form {
